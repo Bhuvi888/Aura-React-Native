@@ -1,50 +1,87 @@
-# Welcome to your Expo app 👋
+# Aura 🎨
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Where Creativity Meets Innovation.**
 
-## Get started
+Aura is a premier video-sharing platform built with **React Native** and **Expo**, designed to provide a seamless and immersive experience for creators and explorers alike. Whether you're here to discover endless possibilities or share your own journey of limitless exploration, Aura is your canvas.
 
-1. Install dependencies
+## 🌟 Features
 
-   ```bash
-   npm install
-   ```
+- **Seamless Authentication**: Secure and easy sign-up/sign-in using email credentials via **Appwrite**.
+- **Immersive Video Feed**: Browse a curated stream of high-quality creative content.
+- **Create & Share**: Upload your own videos with custom thumbnails and "AI Prompts" to describe your vision.
+- **Smart Search**: Quickly find the content you love with robust search functionality.
+- **Personalized Profiles**: Manage your uploaded content and view your profile details.
+- **Cross-Platform**: Optimized for both **Android** and **iOS** devices.
+- **Modern UI/UX**: Built with **NativeWind** (Tailwind CSS) for a sleek, responsive, and beautiful interface.
 
-2. Start the app
+## 🛠 Tech Stack
 
-   ```bash
-    npx expo start
-   ```
+- **Frontend**: React Native, Expo Router
+- **Styling**: NativeWind (Tailwind CSS)
+- **Backend / Database**: Appwrite
+- **State Management**: React Context API
+- **Assets**: Expo Image Picker, Expo Video
 
-In the output, you'll find options to open the app in a
+## 🚀 Getting Started
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Follow these steps to set up the project locally on your machine.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites
 
-## Get a fresh project
+Ensure you have the following installed:
 
-When you're ready, run:
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [Git](https://git-scm.com/)
+- [Expo Go](https://expo.dev/client) app on your mobile device (or an emulator).
+
+### Installation
+
+1.  **Clone the repository**
+
+    ```bash
+    git clone <repository-url>
+    cd Aura-React-Native
+    ```
+
+2.  **Install dependencies**
+
+    ```bash
+    npm install
+    ```
+
+### Running the App
+
+Start the development server:
 
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+In the terminal output, you'll see a QR code.
 
-## Learn more
+- **Mobile**: Scan the QR code with the **Expo Go** app (Android) or Camera app (iOS).
+- **Emulator**: Press `a` for Android or `i` for iOS simulator.
 
-To learn more about developing your project with Expo, look at the following resources:
+## ⚙️ Configuration
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The project uses **Appwrite** for backend services. The configuration is located in `lib/appwrite.js`.
 
-## Join the community
+> **Note**: The current configuration points to a demo/development environment. To use your own backend:
 
-Join our community of developers creating universal apps.
+1.  Set up a new project on [Appwrite Cloud](https://cloud.appwrite.io/).
+2.  Create the necessary Database, Collections, and Storage Buckets.
+3.  Update the `config` object in `lib/appwrite.js` with your own endpoint, project ID, and collection IDs.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1.  Fork the project
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License.
